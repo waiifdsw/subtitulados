@@ -1,0 +1,48 @@
+<b></><!DOCTYPE html>
+<html>
+<head>
+ <title>doramasplusGER</title>
+ <meta name="robots" content="noindex">
+ <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+ <script type="text/javascript" src="https://ssl.p.jwpcdn.com/player/v/8.24.0/jwplayer.js"></script>
+ <script type="text/javascript">jwplayer.key="cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o=";</script>
+ <style type="text/css" media="screen">html,body{padding:0;margin:0;height:100%}#apicodes-player{width:100%!important;height:100%!important;overflow:hidden;background-color:#000}</style>
+
+ </head>
+<body>
+<div id="apicodes-player"></div><script type="text/javascript">
+var player = jwplayer("apicodes-player");
+player.setup({
+    sources: [{
+        "type": "video\/mp4",
+        "label": "720p",
+        "file": "https://vuclip-a.akamaihd.net/ace6026fb38b2f08c2f36935e444a493/VP6_V20220227131418/P2/video/c1c8ef2a-e4d1-451d-908e-0213e8870254/vid_720p_V20220302084019.m3u8" }, {
+        }],
+    aspectratio: "16:9",
+    startparam: "start",
+    primary: "html5",
+    autostart: false,
+    preload: "auto",
+    image: "https://image.tmdb.org/t/p/original/1EYjHsuMQiIOKHOvD3lVb4pt5nV.jpg",
+    captions: {
+   
+    },
+    tracks: [{
+        file: "https://siasky.net/OADIsEewWyY-JxZLA7g8j5l58fLCJQuV8LystjmXw7R8Bg",
+        label: "Spanish",
+        kind: "captions",
+        "default": true
+    }]
+});
+player.on("setupError", function () {
+    swal("Server Error!", "Please contact us to fix it asap. Thank you!", "error")
+});
+player.on("error", function () {
+    swal("Server Error!", "Please contact us to fix it asap. Thank you!", "error")
+});
+
+</script>
+</body>
+</html></b>
